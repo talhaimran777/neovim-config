@@ -80,3 +80,10 @@ nnoremap("<A-r>", ":NvimTreeFocus<cr>R<c-w><c-p>:CtrlPClearCache<CR>")
 
 -- Vim Fugitive
 nnoremap("<leader>fh", ":0GcLog<CR>")
+
+-- Remaping vim motions
+nnoremap("<leader>w", "yaw")
+nnoremap("<leader>v", "vi\"")
+nnoremap("<leader>d", "daw")
+nnoremap("<leader>D", "daW")
+nnoremap("yyp", ":co.<CR>")
