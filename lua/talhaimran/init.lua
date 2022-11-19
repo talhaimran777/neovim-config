@@ -1,0 +1,8 @@
+require("talhaimran.packer")
+require("talhaimran.options")
+require("talhaimran.coc")
+require("talhaimran.neogit")
+require("talhaimran.comments")
+require("talhaimran.indentline")
+require("talhaimran.nvimtree")
+require("talhaimran.gitsigns")
