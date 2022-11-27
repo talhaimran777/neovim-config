@@ -24,6 +24,7 @@ require("packer").startup(function()
   use("tpope/vim-fugitive")
   use {'jiangmiao/auto-pairs'}
   use {'tpope/vim-sleuth'}
+  use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
   use {
     'kyazdani42/nvim-tree.lua',
     requires = {

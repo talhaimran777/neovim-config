@@ -87,3 +87,6 @@ nnoremap("<leader>v", "vi\"")
 nnoremap("<leader>d", "daw")
 nnoremap("<leader>D", "daW")
 nnoremap("yyp", ":co.<CR>")
+
+
+nnoremap("gr", ":call CocAction('jumpReferences')<CR>")

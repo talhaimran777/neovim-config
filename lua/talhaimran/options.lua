@@ -30,4 +30,9 @@ vim.opt.backup = false
 vim.opt.writebackup = false
 
 vim.opt.signcolumn = "yes"
-vim.opt.foldmethod  = "manual"
+
+vim.opt.foldlevel = 99 -- Using ufo provider need a large value, feel free to decrease the value
+vim.opt.foldlevelstart = 99
+vim.opt.foldenable = true
+vim.opt.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
+vim.opt.foldcolumn  = "1"
