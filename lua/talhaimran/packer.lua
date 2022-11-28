@@ -25,6 +25,7 @@ require("packer").startup(function()
   use {'jiangmiao/auto-pairs'}
   use {'tpope/vim-sleuth'}
   use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
+  use {'ryanoasis/vim-devicons'}
   use {
     'kyazdani42/nvim-tree.lua',
     requires = {
