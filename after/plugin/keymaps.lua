@@ -32,7 +32,7 @@ nnoremap("<A-l>", "<C-w>l")
 -- FZF
 nnoremap("<leader>fr", ":History<CR>")
 nnoremap("<leader>ff", ":e %:h/<C-d>")
-nnoremap("<A-p>", ":FZF<CR>")
+nnoremap("<C-p>", ":FZF<CR>")
 
 -- Move text
 vnoremap("<", "<gv")
@@ -44,13 +44,14 @@ xnoremap("K", ":move '<-2<CR>gv-gv")
 nnoremap("gcc", "<cmd>lua require('Comment.api').toggle.linewise.current()<CR>")
 xnoremap("gc", '<ESC><CMD>lua require("Comment.api").toggle.linewise(vim.fn.visualmode())<CR>')
 
--- Toggle Diagnostics
+-- COC
 nnoremap("<leader>t", ":call CocAction('diagnosticToggle')<CR>")
+nnoremap("gr", ":call CocAction('jumpReferences')<CR>")
 
 -- Ctrlsf
 nnoremap("<A-s>", ":CtrlSFToggle <CR>")
 nnoremap("<leader>ps", ":CtrlSF -S ''<Left>")
-nnoremap("<leader>pi", ":CtrlSF -I ''<Left>")
+nnoremap("<leader><leader>", ":CtrlSF -I ''<Left>")
 nnoremap("<leader>s", ":CtrlSFFocus <CR>")
 
 -- Barbar
@@ -88,5 +89,10 @@ nnoremap("<leader>d", "daw")
 nnoremap("<leader>D", "daW")
 nnoremap("yyp", ":co.<CR>")
 
+-- Better Vertical Motion
+nnoremap("<A-d>", "<C-d>zz")
+nnoremap("<A-u>", "<C-u>zz")
 
-nnoremap("gr", ":call CocAction('jumpReferences')<CR>")
+-- Search repeat
+nnoremap("n", "nzzzv")
+nnoremap("N", "Nzzzv")

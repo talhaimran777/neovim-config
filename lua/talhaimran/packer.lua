@@ -32,4 +32,5 @@ require("packer").startup(function()
     },
     tag = 'nightly'
   }
+ use { "alexghergh/nvim-tmux-navigation" }
 end)
