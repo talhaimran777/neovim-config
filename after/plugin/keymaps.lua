@@ -2,6 +2,8 @@ local Remap = require("talhaimran.keymap")
 local nnoremap = Remap.nnoremap
 local xnoremap = Remap.xnoremap
 local vnoremap = Remap.vnoremap
+local inoremap = Remap.inoremap
+local tnoremap = Remap.tnoremap
 
 -- Close Neovim
 nnoremap("<A-w>", ":q!<CR>")
@@ -32,7 +34,7 @@ nnoremap("<A-l>", "<C-w>l")
 -- FZF
 nnoremap("<leader>fr", ":History<CR>")
 nnoremap("<leader>ff", ":e %:h/<C-d>")
-nnoremap("<C-p>", ":FZF<CR>")
+nnoremap("<A-p>", ":FZF<CR>")
 
 -- Move text
 vnoremap("<", "<gv")
@@ -51,7 +53,7 @@ nnoremap("gr", ":call CocAction('jumpReferences')<CR>")
 -- Ctrlsf
 nnoremap("<A-s>", ":CtrlSFToggle <CR>")
 nnoremap("<leader>ps", ":CtrlSF -S ''<Left>")
-nnoremap("<leader><leader>", ":CtrlSF -I ''<Left>")
+nnoremap("<leader>pi", ":CtrlSF -I ''<Left>")
 nnoremap("<leader>s", ":CtrlSFFocus <CR>")
 
 -- Barbar
@@ -96,3 +98,7 @@ nnoremap("<A-u>", "<C-u>zz")
 -- Search repeat
 nnoremap("n", "nzzzv")
 nnoremap("N", "Nzzzv")
+
+
+-- Remap for reset buffer
+nnoremap("<leader>rr", ":e!<CR>")

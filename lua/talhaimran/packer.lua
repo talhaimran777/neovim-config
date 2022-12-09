@@ -32,5 +32,14 @@ require("packer").startup(function()
     },
     tag = 'nightly'
   }
- use { "alexghergh/nvim-tmux-navigation" }
+  use { "alexghergh/nvim-tmux-navigation" }
+  use {
+    "rmagatti/auto-session",
+    config = function()
+      require("auto-session").setup {
+        log_level = "error",
+        auto_session_suppress_dirs = { "~/", "~/Projects", "~/Downloads", "/"},
+      }
+    end
+  }
 end)
