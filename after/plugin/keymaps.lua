@@ -2,8 +2,6 @@ local Remap = require("talhaimran.keymap")
 local nnoremap = Remap.nnoremap
 local xnoremap = Remap.xnoremap
 local vnoremap = Remap.vnoremap
-local inoremap = Remap.inoremap
-local tnoremap = Remap.tnoremap
 
 -- Close Neovim
 nnoremap("<A-w>", ":q!<CR>")
