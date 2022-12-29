@@ -90,8 +90,8 @@ nnoremap("<leader>D", "daW")
 nnoremap("yyp", ":co.<CR>")
 
 -- Better Vertical Motion
-nnoremap("<A-d>", "<C-d>zz")
-nnoremap("<A-u>", "<C-u>zz")
+nnoremap("<C-d>", "<C-d>zz")
+nnoremap("<C-u>", "<C-u>zz")
 
 -- Search repeat
 nnoremap("n", "nzzzv")
