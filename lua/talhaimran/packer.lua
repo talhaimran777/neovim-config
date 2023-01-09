@@ -4,7 +4,7 @@ require("packer").startup(function()
   use("wbthomason/packer.nvim")
   use("folke/tokyonight.nvim")
   use("nvim-treesitter/nvim-treesitter", {
-      run = ":TSUpdate"
+    run = ":TSUpdate"
   })
   use("junegunn/fzf")
   use("junegunn/fzf.vim")
@@ -15,16 +15,16 @@ require("packer").startup(function()
   use("nvim-lua/plenary.nvim")
   use('dyng/ctrlsf.vim')
   use('lukas-reineke/indent-blankline.nvim')
-  use{'romgrk/barbar.nvim', requires = {'kyazdani42/nvim-web-devicons'}}
-  use{"neoclide/coc.nvim", branch = "release"}
+  use { 'romgrk/barbar.nvim', requires = { 'kyazdani42/nvim-web-devicons' } }
+  use { "neoclide/coc.nvim", branch = "release" }
   use("lewis6991/gitsigns.nvim")
   use("honza/vim-snippets")
   use("mg979/vim-visual-multi")
   use("tpope/vim-fugitive")
-  use {'jiangmiao/auto-pairs'}
-  use {'tpope/vim-sleuth'}
-  use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
-  use {'ryanoasis/vim-devicons'}
+  use { 'jiangmiao/auto-pairs' }
+  use { 'tpope/vim-sleuth' }
+  use { 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' }
+  use { 'ryanoasis/vim-devicons' }
   use {
     'kyazdani42/nvim-tree.lua',
     requires = {
@@ -38,8 +38,9 @@ require("packer").startup(function()
     config = function()
       require("auto-session").setup {
         log_level = "error",
-        auto_session_suppress_dirs = { "~/", "~/Projects", "~/Downloads", "/"},
+        auto_session_suppress_dirs = { "~/", "~/Projects", "~/Downloads", "/" },
       }
     end
   }
+  use("nvim-lualine/lualine.nvim")
 end)
